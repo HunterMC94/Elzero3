@@ -1,13 +1,12 @@
 ﻿  /* Setting up loader */
-  var readyState = setInterval(function(){
+  document.onreadystatechange = function() {
     if (document.readyState == "complete") {
       document.querySelector(
         "#loader").style.display = "none";
       document.querySelector(
         "body").style.visibility = "visible";
-	   clearInterval(readyState);
     }
-  }, 1000);
+  };
   
 
 
