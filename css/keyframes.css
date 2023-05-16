@@ -1,0 +1,97 @@
+﻿@keyframes move-right{
+	50%{
+		left: 0;
+		
+	}
+	100%{
+		left: 0;
+		border-radius: 5px;
+		width: 60%;
+		height: 100%;
+	}
+}
+
+@keyframes move-left{
+	50%{
+		right: 0;
+		
+	}
+	100%{
+		right: 0;
+		border-radius: 5px;
+		width: 60%;
+		height: 100%;
+	}
+}
+
+@keyframes float{
+    0%, 100%{
+        top: 0;
+    }
+    50%{
+        top: -20px;
+    }
+}
+
+@keyframes bounce{
+    0%, 10%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%, 60%{
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes arrow-move{
+	100%{
+		transform: translateX(10px);
+	}
+}
+
+@keyframes arrow-move-pos{
+	100%{
+		left: -20px;
+	}
+}
+
+@keyframes flash{
+	0%, 40%{
+		opacity: 1;
+		
+	}
+	
+	100%{
+		opacity: 0;
+		width: 200%;
+		height: 200%;
+	}
+}
+
+@keyframes change-back{
+	0%, 100% {
+		background-image: url("../img/discount-back1.jpg");
+	}
+	50% {
+		background-image: url("../img/discount-back2.jpg");
+	}
+}
+
+@keyframes txtshade{
+  0%{
+    text-shadow: 0 0 10px aqua
+  }
+  50%{
+    text-shadow: 0 0 0 transparent
+  }
+  100%{
+    text-shadow: 0 0 10px aqua
+  }
+}
+
+@keyframes loaderspin{
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
