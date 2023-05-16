@@ -1,12 +1,13 @@
 ﻿  /* Setting up loader */
-  setTimeout(function(){
+  var readyState = function(){
     if (document.readyState == "complete") {
       document.querySelector(
         "#loader").style.display = "none";
       document.querySelector(
         "body").style.visibility = "visible";
     }
-  }, 5000);
+  }
+  
 
 
 $('#menu-open').on('click', function(){
